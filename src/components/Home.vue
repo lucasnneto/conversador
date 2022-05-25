@@ -3,6 +3,7 @@
     <v-card
       :height="$vuetify.breakpoint.mobile ? '100%' : 660"
       :width="$vuetify.breakpoint.mobile ? '100%' : 375"
+      max-height="100vh"
     >
       <component :is="screen" @change-screen="(sc) => (screen = sc)" />
     </v-card>

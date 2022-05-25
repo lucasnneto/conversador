@@ -26,15 +26,16 @@
     <div
       class="d-flex overflow-hidden flex-column justify-space-between h-full ml-3"
     >
-      <div
-        id="chat"
-        class="overflow-y-auto d-flex flex-column pr-3"
-        style="height: 530px"
-      >
+      <div id="chat" class="overflow-y-auto d-flex flex-column pr-3">
+        <!-- style="height: 530px" -->
         <v-card
           width="70%"
           v-for="hist in history"
           :key="hist.msg + hist.date"
+          :class="{
+            'rounded-br-0': hist.isMy,
+            'rounded-bl-0': !hist.isMy,
+          }"
           class="mb-4 pa-3"
           :style="hist.isMy ? 'align-self: end;' : ''"
         >
