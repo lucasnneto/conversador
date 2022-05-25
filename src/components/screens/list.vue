@@ -21,7 +21,7 @@
       <div class="mx-3 mt-3 d-flex justify-space-between" v-else>
         <h2>{{ user }}</h2>
         <v-btn icon outlined>
-          <v-icon>mdi-account-sync</v-icon>
+          <v-icon>mdi-chat-plus</v-icon>
         </v-btn>
       </div>
     </div>
